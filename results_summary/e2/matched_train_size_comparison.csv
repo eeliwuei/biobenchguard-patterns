@@ -1,0 +1,13 @@
+matched_loso_study,model,arm,train_n,test_n,loso_auroc,random_matched_mean_auroc,random_split_sd,random_minus_loso,random_repeats,estimand_note
+crc_baxter,logistic_C1,B_train_supervised20,176,292,0.7125,0.7087870986544906,0.021900329713294496,-0.0037129013455093896,10,random mixture new-sample target differs from LOSO new-study target
+crc_baxter,logistic_C1,D_all_train_variable,176,292,0.7359980620155039,0.6974109875163939,0.033025562109030696,-0.03858707449911003,10,random mixture new-sample target differs from LOSO new-study target
+crc_baxter,random_forest_120,B_train_supervised20,176,292,0.7392926356589147,0.7209646864526158,0.02528235579515015,-0.018327949206298877,10,random mixture new-sample target differs from LOSO new-study target
+crc_baxter,random_forest_120,D_all_train_variable,176,292,0.7657945736434109,0.7478481566036819,0.030264289914832737,-0.01794641703972899,10,random mixture new-sample target differs from LOSO new-study target
+crc_zackular,logistic_C1,B_train_supervised20,408,60,0.8011111111111111,0.7766203703703705,0.06649918591706956,-0.024490740740740646,10,random mixture new-sample target differs from LOSO new-study target
+crc_zackular,logistic_C1,D_all_train_variable,408,60,0.7733333333333333,0.7424768518518519,0.04974084669506624,-0.030856481481481457,10,random mixture new-sample target differs from LOSO new-study target
+crc_zackular,random_forest_120,B_train_supervised20,408,60,0.7761111111111111,0.7785300925925925,0.05943114544140761,0.0024189814814814525,10,random mixture new-sample target differs from LOSO new-study target
+crc_zackular,random_forest_120,D_all_train_variable,408,60,0.8105555555555556,0.8159143518518517,0.06614147054998573,0.005358796296296098,10,random mixture new-sample target differs from LOSO new-study target
+crc_zeller,logistic_C1,B_train_supervised20,352,116,0.7652032520325204,0.7618871415356152,0.040142121423583886,-0.003316110496905167,10,random mixture new-sample target differs from LOSO new-study target
+crc_zeller,logistic_C1,D_all_train_variable,352,116,0.5778861788617886,0.7319765649090348,0.051559150879566,0.15409038604724623,10,random mixture new-sample target differs from LOSO new-study target
+crc_zeller,random_forest_120,B_train_supervised20,352,116,0.7837398373983739,0.7514184397163122,0.04043162527866543,-0.03232139768206177,10,random mixture new-sample target differs from LOSO new-study target
+crc_zeller,random_forest_120,D_all_train_variable,352,116,0.833170731707317,0.7856922602528522,0.04997008167670634,-0.04747847145446482,10,random mixture new-sample target differs from LOSO new-study target

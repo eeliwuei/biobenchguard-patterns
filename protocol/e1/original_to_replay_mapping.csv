@@ -1,0 +1,9 @@
+component,original_source,original_behavior,replay_behavior,exact_match
+subject_ID,run_uci_parkinsons_analysis.R lines 15-16,third underscore token,same third token,yes
+features,run_uci_parkinsons_analysis.R line 20,22 non-ID non-status acoustic columns,same 22 names,yes
+record_split,utility_functions lines 233-237,random half of rows,random half via NumPy RNG,different RNG
+subject_split,utility_functions lines 209-229,half cases and half controls by subject,same subject stratification with NumPy RNG,different RNG
+model,utility_functions lines 158-174,R randomForest defaults,sklearn RF500 sqrt features plus fixed logistic comparator,no
+replicates,run_uci_parkinsons_analysis.R lines 23-24,30 splits and 1000 permutations each,30 twofold repeats and 99 per control on first split,no
+uncertainty,utility_functions GetNormApproxVarAUC,record-level approximate null variance,conditional stratified subject bootstrap,no
+permutation,utility_functions lines 13-45,permute labels among subjects preserving within-subject consistency,same mechanism and rejection when a split lacks a class,mechanism match only

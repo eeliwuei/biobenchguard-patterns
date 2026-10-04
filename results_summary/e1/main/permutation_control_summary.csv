@@ -1,0 +1,9 @@
+null_scheme,model,scheme,n_permutations,mean_auc,median_auc,mc_q025,mc_q975,interpretation
+record_label,logistic_regression,record_wise,99,0.49411060720584526,0.4868197278911564,0.37032312925170063,0.6073341836734694,"conditional randomized-label distribution, not real-case FPR and not a confidence interval"
+record_label,logistic_regression,subject_wise,99,0.4951427540713255,0.4973072562358276,0.37835884353741495,0.6029336734693878,"conditional randomized-label distribution, not real-case FPR and not a confidence interval"
+record_label,random_forest,record_wise,99,0.4928444020705926,0.49702380952380953,0.3827522675736961,0.614314058956916,"conditional randomized-label distribution, not real-case FPR and not a confidence interval"
+record_label,random_forest,subject_wise,99,0.48852541858494236,0.4889455782312925,0.37840490362811785,0.5976048752834467,"conditional randomized-label distribution, not real-case FPR and not a confidence interval"
+subject_label,logistic_regression,record_wise,99,0.7249469919916751,0.7278911564625851,0.5719399403597055,0.8560133414096233,"conditional randomized-label distribution, not real-case FPR and not a confidence interval"
+subject_label,logistic_regression,subject_wise,99,0.4722200559209522,0.47078557450377406,0.24967151244059269,0.7263747165532881,"conditional randomized-label distribution, not real-case FPR and not a confidence interval"
+subject_label,random_forest,record_wise,99,0.8293689632008916,0.8323412698412698,0.7097812412636287,0.9273453262339418,"conditional randomized-label distribution, not real-case FPR and not a confidence interval"
+subject_label,random_forest,subject_wise,99,0.46097797821270914,0.4570344827586207,0.2134155717081353,0.7130913067281707,"conditional randomized-label distribution, not real-case FPR and not a confidence interval"

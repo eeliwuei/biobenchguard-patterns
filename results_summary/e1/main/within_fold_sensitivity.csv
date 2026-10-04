@@ -1,0 +1,5 @@
+model,scheme,mean_within_fold_auc,split_auc_sd,interpretation
+logistic_regression,record_wise,0.8894902099025443,0.026866127508695905,"descriptive variability of dependent folds, not standard error"
+logistic_regression,subject_wise,0.7527161715082663,0.06976542324167608,"descriptive variability of dependent folds, not standard error"
+random_forest,record_wise,0.9421886640751148,0.02789488093425135,"descriptive variability of dependent folds, not standard error"
+random_forest,subject_wise,0.7954096335919252,0.06491656923142063,"descriptive variability of dependent folds, not standard error"

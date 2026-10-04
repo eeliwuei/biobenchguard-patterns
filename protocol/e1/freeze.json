@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-09-08T05:28:06.660026+00:00",
+  "protocol_sha256": "2d3b9d9996d61e401f480afd32f19755288c4b9f40a19d88ca1fcd2d40426b4d",
+  "script_sha256": "47897faa5e85140a44b22b94c1bc029f854402ad063bb47cb9eb6fcaaa683ce1",
+  "data_sha256": "a36116c2deac07895b79ce97a2f99a1b3720ac4892995ff5c3b9ccb397ed2bc5",
+  "pilot_accepted": "schema, coverage, split identity and finite outputs passed; no effect-based tuning",
+  "pilot_log_sha256": "b3468859a3425c9b6f9010a102979f3bdea8c47ed4e83d05c400e6e0d7b5dfda",
+  "pilot_seed_disjoint_from_main": true,
+  "tests": {
+    "status": "PASS",
+    "tests": [
+      "authentic_data_schema",
+      "no_label_or_ID_features",
+      "deterministic_splits",
+      "complete_disjoint_record_coverage",
+      "subject_repair_no_overlap",
+      "label_control_invariants",
+      "target_contract_unit_fixtures"
+    ],
+    "note": "Unit fixtures are engineering tests, not independently scrutinized real negative controls."
+  },
+  "amendment": "Bookkeeping-only correction: started_utc previously converted elapsed duration to epoch time; the main analysis was rerun with unchanged protocol and seeds."
+}

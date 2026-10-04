@@ -1,0 +1,480 @@
+{
+  "status": "FROZEN_CONFIRMATORY_V3",
+  "alpha": 0.05,
+  "fixed_baseline_cutoff": 0.05,
+  "fixed_baseline_source": "new analyst-defined illustrative score-unit cutoff, chosen before revision outcomes; not community standard or reconstruction of old Figure 3A",
+  "conditions": [
+    {
+      "id": "wheat_baseline",
+      "base": "wheat",
+      "task": "regression",
+      "family": "linear",
+      "signal": 0,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 500,
+        "evaluation": 500,
+        "alternative": 200
+      },
+      "alternative_L": [
+        400,
+        1000,
+        2500
+      ]
+    },
+    {
+      "id": "wheat_weak",
+      "base": "wheat",
+      "task": "regression",
+      "family": "linear",
+      "signal": 0.3,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "wheat_medium",
+      "base": "wheat",
+      "task": "regression",
+      "family": "linear",
+      "signal": 1,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "wheat_nonlinear",
+      "base": "wheat",
+      "task": "regression",
+      "family": "linear",
+      "signal": 1,
+      "noise": "normal",
+      "architecture": "nonlinear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "wheat_rf",
+      "base": "wheat",
+      "task": "regression",
+      "family": "rf",
+      "signal": 0.5,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 100,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "microbiome_crc_baseline",
+      "base": "microbiome_crc",
+      "task": "binary",
+      "family": "linear",
+      "signal": 0,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 500,
+        "evaluation": 500,
+        "alternative": 200
+      },
+      "alternative_L": [
+        400,
+        1000,
+        2500
+      ]
+    },
+    {
+      "id": "microbiome_crc_weak",
+      "base": "microbiome_crc",
+      "task": "binary",
+      "family": "linear",
+      "signal": 0.5,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "microbiome_crc_medium",
+      "base": "microbiome_crc",
+      "task": "binary",
+      "family": "linear",
+      "signal": 1.5,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "microbiome_crc_nonlinear",
+      "base": "microbiome_crc",
+      "task": "binary",
+      "family": "linear",
+      "signal": 1,
+      "noise": "normal",
+      "architecture": "nonlinear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "microbiome_crc_rf",
+      "base": "microbiome_crc",
+      "task": "binary",
+      "family": "rf",
+      "signal": 0.5,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 100,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "wheat_heteroscedastic",
+      "base": "wheat",
+      "task": "regression",
+      "family": "linear",
+      "signal": 0.5,
+      "noise": "heteroscedastic",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "wheat_heavy",
+      "base": "wheat",
+      "task": "regression",
+      "family": "linear",
+      "signal": 0.5,
+      "noise": "heavy",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "microbiome_crc_rare",
+      "base": "microbiome_crc",
+      "task": "binary",
+      "family": "linear",
+      "signal": 0,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.2,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "microbiome_crc_k10",
+      "base": "microbiome_crc",
+      "task": "binary",
+      "family": "linear",
+      "signal": 0,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 10,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "microbiome_crc_k50",
+      "base": "microbiome_crc",
+      "task": "binary",
+      "family": "linear",
+      "signal": 0,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 50,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "wheat_fold10",
+      "base": "wheat",
+      "task": "regression",
+      "family": "linear",
+      "signal": 0,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 10,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "rice_baseline",
+      "base": "rice",
+      "task": "regression",
+      "family": "linear",
+      "signal": 0,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "rice_medium",
+      "base": "rice",
+      "task": "regression",
+      "family": "linear",
+      "signal": 1,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "wheat_linear_signal05",
+      "base": "wheat",
+      "task": "regression",
+      "family": "linear",
+      "signal": 0.5,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 100,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "microbiome_crc_linear_signal05",
+      "base": "microbiome_crc",
+      "task": "binary",
+      "family": "linear",
+      "signal": 0.5,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "counts": {
+        "calibration": 100,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "wheat_dimension_matched",
+      "base": "wheat",
+      "task": "regression",
+      "family": "linear",
+      "signal": 0,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "sample_limit": 398,
+      "feature_limit": 1279,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    },
+    {
+      "id": "rice_dimension_matched",
+      "base": "rice",
+      "task": "regression",
+      "family": "linear",
+      "signal": 0,
+      "noise": "normal",
+      "architecture": "linear",
+      "prevalence": 0.5,
+      "k": 20,
+      "folds": 5,
+      "sample_limit": 398,
+      "feature_limit": 1279,
+      "counts": {
+        "calibration": 200,
+        "evaluation": 200,
+        "alternative": 100
+      },
+      "alternative_L": [
+        2500
+      ]
+    }
+  ],
+  "mixed": {
+    "replicates": 30,
+    "L": [
+      0,
+      400,
+      2500
+    ],
+    "eta": [
+      0,
+      0.2,
+      0.8
+    ]
+  },
+  "inference": "conditional on fixed X; baseline-reference exceedance, not clean-pipeline FPR; no pooled joint alarm",
+  "failure_handling": "all attempted instances retained; any failure yields nonzero exit; exclusions require explicit report",
+  "frozen_utc": "2026-09-08T05:32:49.344697+00:00",
+  "pilot_evidence": {
+    "n_attempted": 166,
+    "n_failed": 0,
+    "wall_seconds": 24.095475912094116,
+    "workers": 4,
+    "selection_rule": "all prespecified conditions retained; counts set by runtime and precision, no outcome-dependent selection"
+  },
+  "amendment": "Independent code review before completed primary results: nested candidate columns generated from a fixed max-pool; identical E4 reference across model families; added signal=.5 linear controls for RF model comparison; counts unchanged. v1 interrupted and not used. E4 scope and group contrasts now share exact size-matched random folds; per-fold IDs, selectors and OOF predictions recorded. Added outcome-blind dimension-matched wheat/rice control at n398,p1279. Transfer flags operational, source-evaluation rates reported; no attribution to transport alone."
+}

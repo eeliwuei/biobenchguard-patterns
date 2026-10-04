@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "phenotypes_reported": [
+    "1",
+    "2",
+    "4",
+    "5"
+  ],
+  "raw_outcomes_authentic": true,
+  "scope": "conditional split/candidate randomization on fixed X,y; not biological-null calibration",
+  "reference_realizations": 200,
+  "score_rows": 2000,
+  "model_fits": 20000,
+  "failures": 0,
+  "reason": "Correct provenance inspection requires repairing C at every L, irrespective of either numeric screen. Injected candidates and randomized folds supply no new untouched deployment decision.",
+  "additional_practitioner_utility_established": false
+}

@@ -1,0 +1,37 @@
+created_utc: '2026-09-08T05:20:00Z'
+revision_design: prospective_protocol_after_source_audit_not_preregistration
+route: A_plus_B
+estimands:
+  selection_scope_sensitivity:
+    statistic: 'pooled OOF metric of full-label selector C minus identical fold-internal selector B'
+    input: [X, y, splits, model, selector]
+    identifiable: 'counterfactual sensitivity to selector fit scope on the supplied task'
+    not_identifiable: 'which pipeline was used before this calculation'
+    reference_null: 'L=0: no additional independent candidate columns, conditional on geometry and outcome generator'
+    rate_name: baseline_reference_exceedance
+    alternative_rate_name: reference_exceedance_by_candidate_count
+    caveat: 'C uses all labels at every L, including L=0; no clean-pipeline FPR claim'
+  observed_pipeline_scope:
+    input: [fold_train_ids, fold_test_ids, actual_selector_fit_ids, actual_transform_fit_ids]
+    statistic: 'observed overlap of held-out identifiers with fit-scope identifiers'
+    no_provenance_status: INSUFFICIENT_PIPELINE_PROVENANCE
+    interpretation: 'information-path evidence is independent of measured score inflation'
+  group_split_sensitivity:
+    statistic: 'random-split minus group-disjoint OOF metric under matched training count and model'
+    required_context: target_population
+    seen_group_target: 'new records from groups represented in training; group information can be legitimate'
+    unseen_group_target: 'new groups; record-wise overlap fails to emulate this target'
+    caveat: 'difference between evaluation designs is not specific evidence of contamination'
+calibration:
+  quantile: 'order statistic ceil((B+1)*(1-alpha)); 1-based; +infinity if index exceeds B'
+  rejection: 'T > cutoff; ties do not reject'
+  exchangeability_bound: 'marginal over calibration and independent evaluation draws at identical theta only'
+  alpha: 0.05
+  transport_failure_rule: 'one-sided 95% Wilson lower bound > 0.05 on held-out baseline draws; otherwise lack of demonstrated inflation is not proof of validity'
+  no_real_null: CALIBRATION_NOT_TRANSPORTABLE
+  conditional_scope: fixed_feature_matrix
+severity_config:
+  L_primary: [0, 400, 1000, 2500]
+  L_mixed: [0, 400, 2500]
+  eta_mixed: [0, 0.2, 0.8]
+  description: 'new revision grids; historical 5E and 5G grids are preserved separately'

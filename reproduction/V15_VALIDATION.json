@@ -1,0 +1,52 @@
+{
+  "revision": "v15",
+  "status": "PASS_WITH_STATED_SCOPE",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "matplotlib": "3.10.9",
+    "pytest": "9.0.2"
+  },
+  "distinct_E5_test_cases_passed": 64,
+  "same_cases_passed_with_bundled_fixtures_only": 64,
+  "existing_core_tests_passed": 7,
+  "CLI_demo_reference_instances": 5,
+  "normal_E5_summary_comparison": {
+    "operating_rows": 16,
+    "operating_CSV_byte_identical": true,
+    "bootstrap_arrays": 12,
+    "bootstrap_values_identical": 72000,
+    "full_PDF_SVG_PNG_rendering_completed": true
+  },
+  "publication_semantics": {
+    "individual_file_replacement_atomic": true,
+    "whole_six_file_set_atomic": false,
+    "summary_committed_last": true,
+    "catchable_render_and_tested_commit_failures_preserve_previous_outputs": true,
+    "unresolved_rollback_causes_fail_closed": true,
+    "concurrent_reader_or_power_loss_snapshot_guarantee": false
+  },
+  "biological_model_refits_in_this_v15_validation": 0,
+  "full_E1_to_E5_raw_input_refit": false,
+  "historical_fit_evidence": [
+    "PRIOR_EXECUTION_EVIDENCE.json",
+    "E5_REPRODUCTION.json"
+  ],
+  "historical_interface_evidence": "INTERFACE_VALIDATION.json",
+  "E1_post_hoc_addition": {
+    "model_refits": 0,
+    "fixed_first_split_seed": 110003,
+    "repeat": 0,
+    "comparison_rows": 8,
+    "reference_statistic_rows": 792,
+    "calibrated_p_values": false,
+    "multiplicity_correction": false,
+    "descriptive_boundary": "rank < 0.05; equality reported separately",
+    "sample_level_predictions_included": false
+  },
+  "test_data_exception": "e5/tests/fixtures/bootstrap_draws_v14.npz contains only 12 derived bootstrap arrays, no raw outcomes or individual predictions.",
+  "limits": "Historical fit records are retained under their original identities. Test and smoke completion does not establish a new full refit, external-team replication, a biological-null calibration or editorial acceptance."
+}

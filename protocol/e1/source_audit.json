@@ -1,0 +1,31 @@
+{
+  "recorded_utc": "2026-09-08T05:24:38.666768+00:00",
+  "author_repo": "https://github.com/Sage-Bionetworks/mHealthIdentityConfounding",
+  "author_repo_commit": "72bd7905f2b2f3094abc92352b9ad5ca7b345ff7",
+  "author_files_reviewed": {
+    "code/run_uci_parkinsons_analysis.R": "e3ed2a66a24d8db4dc42a6e62c864e7be46eafe463c09872cc566002c125b49a",
+    "code/utility_functions_disease_recognition_and_identity_confounding.R": "af87584a4d216d2cf9023bc3c08a1b8b010b7eeaeacb3a02517bb096c60cf3c6"
+  },
+  "data_hashes": {
+    "parkinsons.data": "a36116c2deac07895b79ce97a2f99a1b3720ac4892995ff5c3b9ccb397ed2bc5",
+    "parkinsons.names": "ac4f44495100d468feb566d1272b2070000507ec6a02ea64ff50b847784d7455",
+    "parkinsons.zip": "9baccfbcdac15d6d9347b37c2a352fb31d65c52e367df5a47d7543a55c75b0ab",
+    "download_receipt.json": "560f34350a6a7af3060741c59e7d0fc5d22d7373f9e5f456c97ca8e3b010bf3a"
+  },
+  "current_raw_count": {
+    "rows": 195,
+    "subjects": 32,
+    "PD_subjects": 24,
+    "control_subjects": 8,
+    "PD_records": 147,
+    "control_records": 48,
+    "features": 22
+  },
+  "metadata_discrepancy": "Current UCI prose says 31 persons/23 PD and instance field says 197; downloaded raw table contains 195 rows/32 unique third-token subject IDs/24 PD, consistent with Chaibub Neto paper and author parsing code. No row was removed or silently corrected.",
+  "subject_id_rule": "split name on underscore, take third token (index 2); suffix is recording index",
+  "license": "CC BY 4.0 as stated on current UCI dataset page",
+  "data_source": "https://archive.ics.uci.edu/static/public/174/parkinsons.zip",
+  "license_source": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+  "article_source": "https://doi.org/10.1038/s41746-019-0178-x",
+  "author_code_license": "No LICENSE file was found in the inspected author repository. Its R code is not redistributed or covered by the analysis-code license."
+}

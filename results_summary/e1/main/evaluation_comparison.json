@@ -1,0 +1,26 @@
+{
+  "mechanism_audit": {
+    "flagged_record_splits": 60,
+    "total_splits": 120
+  },
+  "predictive_gap": {
+    "random_forest__gap": {
+      "model": "random_forest",
+      "statistic": "record_minus_subject_oof_auc",
+      "value": 0.14656320861677985,
+      "ci_lower": 0.07109389745053252,
+      "ci_upper": 0.23639297688099065,
+      "interpretation": "predictive split sensitivity, not a verified error rate or sole proof of misuse"
+    },
+    "logistic_regression__gap": {
+      "model": "logistic_regression",
+      "statistic": "record_minus_subject_oof_auc",
+      "value": 0.1418367346938778,
+      "ci_lower": 0.06853091571524057,
+      "ci_upper": 0.21738685752078613,
+      "interpretation": "predictive split sensitivity, not a verified error rate or sole proof of misuse"
+    }
+  },
+  "legacy_data_only_statistic": "X,y,g are identical for record and repaired cases. Recomputing a random-minus-group diagnostic from those inputs yields the same value for both case descriptors and cannot establish which actual pipeline ran.",
+  "independent_real_negative": "NOT RECOVERED; repaired subject-disjoint control is local and mechanism-specific only"
+}

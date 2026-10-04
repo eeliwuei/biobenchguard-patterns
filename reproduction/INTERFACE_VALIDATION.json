@@ -1,0 +1,95 @@
+{
+  "validated_utc": "2026-09-08T08:44:50.187362+00:00",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "matplotlib": "3.10.9",
+    "pyreadr": "0.5.6",
+    "pytest": "9.0.2"
+  },
+  "fresh_install": "PASS",
+  "interface_version": "patterns-revision-cli 14.0",
+  "checks": [
+    {
+      "check": "fresh_environment_installation",
+      "returncode": "0",
+      "expected_returncode": "0",
+      "status": "PASS"
+    },
+    {
+      "check": "fresh_installed_versions",
+      "returncode": "0",
+      "expected_returncode": "0",
+      "status": "PASS"
+    },
+    {
+      "check": "help",
+      "returncode": "0",
+      "expected_returncode": "0",
+      "status": "PASS"
+    },
+    {
+      "check": "version",
+      "returncode": "0",
+      "expected_returncode": "0",
+      "status": "PASS"
+    },
+    {
+      "check": "core_tests",
+      "returncode": "0",
+      "expected_returncode": "0",
+      "status": "PASS"
+    },
+    {
+      "check": "demo",
+      "returncode": "0",
+      "expected_returncode": "0",
+      "status": "PASS"
+    },
+    {
+      "check": "locked_replot",
+      "returncode": "0",
+      "expected_returncode": "0",
+      "status": "PASS"
+    },
+    {
+      "check": "overwrite_rejected",
+      "returncode": "1",
+      "expected_returncode": "1",
+      "status": "PASS"
+    },
+    {
+      "check": "missing_raw_rejected",
+      "returncode": "1",
+      "expected_returncode": "1",
+      "status": "PASS"
+    },
+    {
+      "check": "final_presentation_replot",
+      "returncode": "0",
+      "expected_returncode": "0",
+      "status": "PASS"
+    }
+  ],
+  "unit_tests": 7,
+  "engineering_reference_instances": 5,
+  "replot_figures": 7,
+  "replot_formats": [
+    "PDF",
+    "SVG",
+    "PNG"
+  ],
+  "full_recomputation_in_current_packaging_pass": false,
+  "fitting_basis": "Recorded full execution plus unchanged scientific fitting sources; interface/demo/replot tests do not replace full model fitting.",
+  "final_figure_source_sha256": "e16ab56b0a81e796f2bd58569066cb0a919c4e1ee43e289425498a843f674f7b",
+  "actual_reader_package_E5_execution": {
+    "evidence_file": "reproduction/E5_REPRODUCTION.json",
+    "evidence_sha256": "0afa44daccf74466319ef74550e74eb3c3c645d35de7481fdef70124422c454c",
+    "model_fits": 20000,
+    "observed_all_numerical_values_exact": true,
+    "external_team_replication": false
+  }
+}

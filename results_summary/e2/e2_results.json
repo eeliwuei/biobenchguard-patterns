@@ -1,0 +1,53 @@
+{
+  "frozen_policy_action": "Retain both candidates for another independent-study validation; no preference under frozen policy",
+  "primary_equal_study_auroc": {
+    "logistic_C1": 0.7596047877145438,
+    "random_forest_120": 0.7663811947228
+  },
+  "rf_minus_logistic_B_by_study": {
+    "crc_baxter": 0.026792635658914654,
+    "crc_zackular": -0.025000000000000022,
+    "crc_zeller": 0.018536585365853564
+  },
+  "rf_minus_logistic_B_mean": 0.006776407008256065,
+  "rf_minus_logistic_D_mean": 0.10743442889855255,
+  "diagnostics": [
+    {
+      "case": "CRC_LOSO_logistic_C1",
+      "statistic": "equal-study mean AUROC(C)-AUROC(B)",
+      "observed": 0.04871011113211906,
+      "illustrative_threshold": 0.02,
+      "baseline_response": "exceeds_illustrative_0.02",
+      "calibration_status": "calibration_not_established",
+      "historical_geometry_compatible": false,
+      "original_pipeline_leakage_status": "not identifiable from C-B; B/C scope known by construction",
+      "action": "Keep fold-internal B; C is an invalid deployment workflow; obtain compatible calibration before rate claims"
+    },
+    {
+      "case": "CRC_LOSO_random_forest_120",
+      "statistic": "equal-study mean AUROC(C)-AUROC(B)",
+      "observed": 0.015399164408310795,
+      "illustrative_threshold": 0.02,
+      "baseline_response": "does_not_exceed_illustrative_0.02",
+      "calibration_status": "calibration_not_established",
+      "historical_geometry_compatible": false,
+      "original_pipeline_leakage_status": "not identifiable from C-B; B/C scope known by construction",
+      "action": "Keep fold-internal B; C is an invalid deployment workflow; obtain compatible calibration before rate claims"
+    }
+  ],
+  "n": 468,
+  "p": 342,
+  "studies": 3,
+  "fit_counts": {
+    "logistic_C1": 72,
+    "random_forest_120": 72
+  },
+  "runtime_seconds_by_model": {
+    "logistic_C1": 0.08564662301068893,
+    "random_forest_120": 3.73284566798975
+  },
+  "warnings_count": 0,
+  "timestamp": "2026-09-08T05:27:57.593090+00:00",
+  "limitations": "Three observed studies; heterogeneous protocols/case definitions; fixed-model comparison; no prospective cohort; no clinical utility or generic FPR claim",
+  "completion": "main models actually fitted and predictions saved"
+}

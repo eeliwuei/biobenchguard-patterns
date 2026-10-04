@@ -1,0 +1,54 @@
+[
+  {
+    "case_pipeline": "record_wise",
+    "model": "random_forest",
+    "data_sha256": "a36116c2deac07895b79ce97a2f99a1b3720ac4892995ff5c3b9ccb397ed2bc5",
+    "diagnostic_input_interface": [
+      "X",
+      "y",
+      "group"
+    ],
+    "data_only_gap": 0.14656320861677985,
+    "actual_pipeline_manifest_read_by_data_only_gap": false,
+    "interpretation": "same input statistics reused transparently; a dataset-level diagnostic cannot identify the actual workflow"
+  },
+  {
+    "case_pipeline": "record_wise",
+    "model": "logistic_regression",
+    "data_sha256": "a36116c2deac07895b79ce97a2f99a1b3720ac4892995ff5c3b9ccb397ed2bc5",
+    "diagnostic_input_interface": [
+      "X",
+      "y",
+      "group"
+    ],
+    "data_only_gap": 0.1418367346938778,
+    "actual_pipeline_manifest_read_by_data_only_gap": false,
+    "interpretation": "same input statistics reused transparently; a dataset-level diagnostic cannot identify the actual workflow"
+  },
+  {
+    "case_pipeline": "subject_wise",
+    "model": "random_forest",
+    "data_sha256": "a36116c2deac07895b79ce97a2f99a1b3720ac4892995ff5c3b9ccb397ed2bc5",
+    "diagnostic_input_interface": [
+      "X",
+      "y",
+      "group"
+    ],
+    "data_only_gap": 0.14656320861677985,
+    "actual_pipeline_manifest_read_by_data_only_gap": false,
+    "interpretation": "same input statistics reused transparently; a dataset-level diagnostic cannot identify the actual workflow"
+  },
+  {
+    "case_pipeline": "subject_wise",
+    "model": "logistic_regression",
+    "data_sha256": "a36116c2deac07895b79ce97a2f99a1b3720ac4892995ff5c3b9ccb397ed2bc5",
+    "diagnostic_input_interface": [
+      "X",
+      "y",
+      "group"
+    ],
+    "data_only_gap": 0.1418367346938778,
+    "actual_pipeline_manifest_read_by_data_only_gap": false,
+    "interpretation": "same input statistics reused transparently; a dataset-level diagnostic cannot identify the actual workflow"
+  }
+]

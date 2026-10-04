@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE_WITH_RETAINED_CROSS_PLATFORM_NUMERICAL_DIFFERENCES",
+  "checked_utc": "2026-09-08T06:35:03.021108+00:00",
+  "CLI_execution_status": "COMPLETE",
+  "CLI_commands_completed": 10,
+  "started_utc": "2026-09-08T06:08:04.910402+00:00",
+  "finished_utc": "2026-09-08T06:26:25.239911+00:00",
+  "elapsed_seconds": 1100.329509,
+  "main_fit_counts": {
+    "E1": 1824,
+    "E2": 144,
+    "E3_E4": 158920
+  },
+  "E3_E4_instances": 14960,
+  "E3_E4_failures": 0,
+  "immutable_staged_code_and_protocol_hashes_verified": 20,
+  "all_18_raw_copies_unchanged": true,
+  "derived_inputs_byte_identical_to_primary": true,
+  "reference_numeric_comparison": "PASS_EXACT; all14960scientific records and six summary CSVs match",
+  "E1_linux_vs_original_macOS": "RF probabilities differ\u22640.008; LR within1e-10; labels, provenance, actions exact",
+  "E2_linux_vs_original_macOS": "RF probabilities differ\u22640.025; LR within1e-10; inputs, features, splits and retain-both decision exact",
+  "failure_policy": "Numerical equivalence failures remain in separate reports; no tolerance relaxation or scientific code changes.",
+  "source_record_sha256": "9c4c255e0ebf510dc6d8e71fd8724646d3deaf2f1362e19ed37017515178765f",
+  "scope": "Selected numerical execution fields from the recorded full E1-E4 run; current interface/package checks are separately reported."
+}

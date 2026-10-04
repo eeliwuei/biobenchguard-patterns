@@ -1,0 +1,11 @@
+{
+  "source_raw_sha256": "1ea5a2fcabfc48f8f86a9e63bb7f9e0edf03efb025a437a9c8f6ea7723ff50b3",
+  "config_sha256": "54c3d64252a405fdd317bc5243f1530ec3b9b85888fecd44c274dd1b76e7f78e",
+  "summarizer_sha256": "2a55de49740f904ab55ab2e4906acfc23a523319076f3a0cc0ee5002be3760d1",
+  "core_sha256": "983faa7853411f31bbe6e1c7b2bb160fb54374bf3f5cd7c2f4f50f6e452e9956",
+  "n_rows": 14960,
+  "n_E3": 12800,
+  "n_E4": 2160,
+  "n_failures": 0,
+  "inference": "No universal FPR, absence, joint alarm, or real-task threshold validity claim. Fixed cutoff .05 is analyst-defined."
+}

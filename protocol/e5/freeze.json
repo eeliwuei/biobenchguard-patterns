@@ -1,0 +1,9 @@
+{
+  "source_protocol_sha256": "af74c674f2a587407868848ada43212e34ed6c162e9495f639a9e7e5940cd31a",
+  "source_parameters_frozen_utc": "2026-09-08T08:08:35.883525+00:00",
+  "reader_edition_prepared_utc": "2026-09-08T08:26:46.542360+00:00",
+  "protocol_sha256": "1f3df37c93defacd5f10109ff0c3a27f1bfb34bc5b7bc0904a06a3bd4dbb14ac",
+  "raw_sha256": "8710523389007dd8b7c88a5deb74ee16aea0bae158496bc11f0626fb43b5ea21",
+  "scientific_parameters_changed": false,
+  "status": "READER_EDITION_OF_EXECUTED_SCIENTIFIC_PROTOCOL"
+}

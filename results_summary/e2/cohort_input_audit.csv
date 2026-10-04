@@ -1,0 +1,4 @@
+study,metadata_id_column,n_otu_samples,n_eligible,n_crc,n_h,n_excluded,n_missing_metadata,n_metadata_rows_without_otu,excluded_labels,total_otu_rows,unassigned_otu_rows_discarded,named_genera_available,assigned_read_fraction_median,min_total_reads
+crc_zeller,Subject ID,129,116,41,75,13,0,27,"{""NaN"": 13}",82665,22458,257,0.8546642819603137,28244
+crc_baxter,Sample_Name_s,490,292,120,172,198,0,0,"{""nonCRC"": 198}",122510,24146,254,0.8960598372806028,751
+crc_zackular,sample_id,92,60,30,30,32,4,2,"{""nonCRC"": 28, ""NaN"": 4}",70846,15282,232,0.9071768928612399,21534
