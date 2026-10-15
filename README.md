@@ -1,6 +1,6 @@
-# Controlled reference tasks in biological prediction
+# Same score, different meaning: data-leakage checks in biological machine learning
 
-Code S1 of Liu and Jang, *Controlled reference tasks characterize benchmark diagnostics in biological prediction*, Patterns (2026). The package holds the analysis code, fixed configurations, environment specifications, execution records and data-access instructions. The derived source tables of Data S1 are included under `results_summary/`.
+Code S1 of Liu and Jang, *Same score, different meaning: interpreting data-leakage checks in biological machine learning*, Patterns (2026; submitted under the title "Controlled reference tasks characterize benchmark diagnostics in biological prediction"). The package holds the analysis code, fixed configurations, environment specifications, execution records and data-access instructions. The derived source tables of Data S1 are included under `results_summary/`.
 
 ## Archive and versions
 
